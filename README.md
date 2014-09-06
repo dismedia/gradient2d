@@ -7,8 +7,8 @@ bilinear interpolation (gradient 2d)
 
 
 bi.js - bilinear interpolation algorithm;
-gradientEdit.js - jQuery based editor
 
+gradientEdit.js - jQuery based editor;
 
 
 Output examples:
