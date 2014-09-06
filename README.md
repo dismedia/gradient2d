@@ -14,8 +14,8 @@ gradientEdit.js - jQuery based editor
 Output examples:
 
 
+![alt tag](https://raw.githubusercontent.com/dismedia/gradient2d/master/output/canvas3.png)
 ![alt tag](https://raw.githubusercontent.com/dismedia/gradient2d/master/output/canvas.png)
-![alt tag](https://raw.githubusercontent.com/dismedia/gradient2d/master/output/canvas1.png)
 ![alt tag](https://raw.githubusercontent.com/dismedia/gradient2d/master/output/canvas2.png)
 
 
