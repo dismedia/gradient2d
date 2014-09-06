@@ -10,7 +10,7 @@ bi.js - bilinear interpolation algorithm;
 gradientEdit.js - jQuery based editor
 
 
-by Marcin Wykręt / dismedia.pl
+by Marcin Wykręt / http://dismedia.pl
 
 using: 
 Farbtastic Color Picker 1.2
