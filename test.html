@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="js/bi.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="js/farbtastic.js"></script>
+    <script type="text/javascript" src="js/gradientEdit.js"></script>
+
+    <link rel="stylesheet" href="css/farbtastic.css" type="text/css" />
+
+    <script>
+        jQuery(document).ready(function() {
+
+            var editor=gradientEditor(1000,250,document.getElementById("gradientContainer"));
+
+            $('#colorpicker').farbtastic(function(){
+
+              color=this.rgb;
+
+                if((!isNaN(color[0]))&&(!isNaN(color[1]))&&(!isNaN(color[2]))){
+
+                    var r= Math.floor(color[0]*255);
+                    var g= Math.floor(color[1]*255);
+                    var b= Math.floor(color[2]*255);
+
+                    editor. setCurrentColor(r,g,b);
+                }
+
+
+            });
+        });
+
+    </script>
+
+</head>
+<body>
+
+<div id="gradientContainer" style="position: relative">
+
+</div>
+
+<div style="float:left">
+
+<div id="colorpicker"></div>
+</div>
+
+</body>
+</html>
