@@ -10,6 +10,9 @@ bi.js - bilinear interpolation algorithm;
 gradientEdit.js - jQuery based editor
 
 
+![alt tag](https://raw.githubusercontent.com/dismedia/gradient2d/master/output/canvas.png)
+
+
 by Marcin Wykręt / http://dismedia.pl
 
 using: 
