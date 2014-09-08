@@ -20,8 +20,9 @@ gradientEdit.js - jQuery based editor;
 ![alt tag](https://raw.githubusercontent.com/dismedia/gradient2d/master/output/canvas2.png)
 
 
-by Marcin Wykręt / http://dismedia.pl
-
 using: 
-Farbtastic Color Picker 1.2
-* © 2008 Steven Wittens
+Farbtastic Color Picker 1.2 by Steven Wittens
+
+
+
+**by Marcin Wykręt -  http://dismedia.pl**
