@@ -2,14 +2,9 @@ var bi=function(resX,resY,container) {
 
     var arr=[];
 
-
-
     function make(x,y,v){
         return {x:x,y:y,v:v,dist:0,weight:0}
     }
-
-
-
 
     var cnv = document.createElement('canvas');
     cnv.width=resX;
@@ -24,9 +19,6 @@ var bi=function(resX,resY,container) {
     var imageData = ctx.getImageData(0,0,resX,resY);
     var rawData = imageData.data;
 
-
-
-
     function metric(x1,y1,x2,y2){
 
         var f=resX/resY;
@@ -35,13 +27,7 @@ var bi=function(resX,resY,container) {
         var y=(y2-y1);
 
 
-        //x=10*Math.sin(y*2*Math.sin(y*x));
-
        x=x*x*f;
-
-
-
-        //y=10*Math.sin(x*2*Math.sin(y*x));
 
         y=y*y/f;
 
@@ -50,8 +36,6 @@ var bi=function(resX,resY,container) {
 
 
     function drawGradient(){
-
-
 
 
         var p={x:0,y:0};
@@ -83,8 +67,6 @@ var bi=function(resX,resY,container) {
                 arr[i].weight=arr[i].dist/sumDist;
             }
 
-
-
         }
 
         for (y = 0; y < resY; y++) {
@@ -94,7 +76,6 @@ var bi=function(resX,resY,container) {
                 p.y=y/resY;
 
                 calculateDist(p);
-
 
                 var r=0;
                 var g=0;
@@ -108,22 +89,14 @@ var bi=function(resX,resY,container) {
 
                 }
 
-
                 r=Math.floor(Math.min(255,r));
                 g=Math.floor(Math.min(255,g));
                 b=Math.floor(Math.min(255,b));
-
-
 
                 var index=(x+y*resX)*4;
                 rawData[index]=r;
                 rawData[index+1]=g;
                 rawData[index+2]=b;
-
-
-               // ctx.fillStyle="rgb("+r+","+g+","+b+")";
-                //ctx.fillRect(x,y,1,1);
-
 
 
             }
